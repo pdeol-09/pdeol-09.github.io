@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate - Kind Paws</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Nunito', sans-serif; background: #f0f8ff; color: #2e4057; }
+    header, footer { background: #a0c4ff; padding: 1.5em; text-align: center; }
+    h1 { font-size: 2.5em; margin-bottom: 0.5em; }
+    nav a { margin: 0 15px; color: #2e4057; text-decoration: none; font-weight: 600; }
+    main { padding: 3em 1em; max-width: 1000px; margin: auto; }
+    h2 { font-size: 2.5em; text-align: center; margin-bottom: 20px; color: #4a90e2; }
+    p { font-size: 1.2em; color: #555; text-align: center; margin-bottom: 30px; }
+    
+    .donate-section { display: flex; justify-content: space-evenly; flex-wrap: wrap; gap: 30px; }
+    .donate-card { background: #ffffff; border-radius: 10px; padding: 25px; width: 300px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); text-align: center; }
+    .donate-card h3 { margin-bottom: 15px; font-size: 1.7em; color: #2e4057; }
+    .donate-card p { margin-bottom: 20px; color: #666; font-size: 1.1em; line-height: 1.5; }
+    .donate-btn { background: #4a90e2; padding: 12px 20px; border-radius: 5px; color: white; text-decoration: none; font-weight: 700; display: inline-block; width: 100%; }
+    .donate-btn:hover { background: #357ab7; }
+    
+    .form-section { max-width: 500px; margin: 0 auto; background: #ffffff; padding: 30px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); }
+    .form-section h3 { font-size: 2em; color: #4a90e2; text-align: center; margin-bottom: 25px; }
+    input, select, button { width: 100%; padding: 15px; margin-top: 10px; margin-bottom: 20px; border-radius: 5px; border: 1px solid #ccc; font-size: 1.1em; }
+    button { background: #4a90e2; color: white; font-weight: bold; border: none; cursor: pointer; }
+    button:hover { background: #357ab7; }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      console.log("Kind Paws - Donate Page Loaded");
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <h1>🐾 Kind Paws</h1>
+    <nav>
+        <ul>
+            <a href="kind paws.index.html">Home</a>
+            <a href="kindpaws.about.html">About</a>
+            <a href="kindpaws.adopt.html">Adopt</a>
+            <a href="kindpaws.donate.html">Donate</a>
+            <a href="kindpaws.volunteer.html">Volunteer</a>
+        </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Support Kind Paws</h2>
+    <p>Your donations help us provide love, care, and support to animals in need. Whether you’re contributing to immediate expenses or becoming a monthly donor, every little bit makes a difference!</p>
+    
+    <div class="donate-section">
+      <div class="donate-card">
+        <h3>One-Time Donation</h3>
+        <p>Support us in providing the essentials – food, medical care, and shelter for our pets.</p>
+        <a href="#" class="donate-btn">Donate Now</a>
+      </div>
+      
+      <div class="donate-card">
+        <h3>Monthly Donation</h3>
+        <p>Become a monthly donor to help us sustain our mission and provide consistent care for our animals.</p>
+        <a href="#" class="donate-btn">Become a Monthly Donor</a>
+      </div>
+    </div>
+
+    <div class="form-section">
+      <h3>Donate Today</h3>
+      <form action="#">
+        <label for="amount">Donation Amount ($)</label>
+        <input type="number" id="amount" name="amount" min="5" step="5" placeholder="Enter amount" required>
+        
+        <label for="donation-type">Donation Type</label>
+        <select id="donation-type" name="donation-type" required>
+          <option value="one-time">One-Time</option>
+          <option value="monthly">Monthly</option>
+        </select>
+
+        <button type="submit">Donate Now</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Kind Paws. All rights reserved.</p>
+  </footer>
+</body>
+</html>

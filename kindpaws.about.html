@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - Kind Paws</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Nunito', sans-serif; background: #f0f8ff; color: #2e4057; }
+    header, footer { background: #a0c4ff; padding: 1em; text-align: center; }
+    nav a { margin: 0 10px; color: #2e4057; text-decoration: none; font-weight: 600; }
+    main { padding: 2em 1em; max-width: 900px; margin: auto; }
+    h2 { font-size: 2em; margin: 1em 0 0.5em; text-align: center; }
+    p { line-height: 1.6; text-align: center; margin-bottom: 1em; }
+    img.main-img { width: 100%; max-width: 700px; display: block; margin: 1em auto; border-radius: 12px; }
+    .testimonial { background: #e3f2ff; margin: 1em auto; padding: 1em; border-radius: 10px; max-width: 600px; text-align: center; font-style: italic; }
+    a { color: #2e4057; font-weight: bold; text-decoration: none; }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      console.log("Kind Paws - About Loaded");
+      document.querySelectorAll('a').forEach(a => a.onmouseover = () => a.style.opacity = 0.7);
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <h1>🐾 Kind Paws</h1>
+    <nav>
+        <ul>
+            <a href="kind paws.index.html">Home</a>
+            <a href="kindpaws.about.html">About</a>
+            <a href="kindpaws.adopt.html">Adopt</a>
+            <a href="kindpaws.donate.html">Donate</a>
+            <a href="kindpaws.volunteer.html">Volunteer</a>
+        </ul>
+  </header>
+
+  <main>
+    <h2>Our Story</h2>
+    <img src="https://images.unsplash.com/photo-1558788353-f76d92427f16?auto=format&fit=crop&w=900&q=80" alt="Kind Paws Shelter" class="main-img">
+    <p>Since 2015, Kind Paws has rehomed over 1,000 dogs. Fueled by love and community, we believe every dog deserves a second chance.</p>
+
+    <h2>Success Stories</h2>
+    <div class="testimonial">
+      <p>“Daisy changed our lives. Thank you Kind Paws!” - Emma & Raj</p>
+    </div>
+    <div class="testimonial">
+      <p>“Volunteering here brings so much joy.” - Mike</p>
+    </div>
+
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:kindpaws@shelter.org">kindpaws@shelter.org</a></p>
+    <p><a href="#">Instagram</a> | <a href="#">Facebook</a> | <a href="#">Twitter</a></p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Kind Paws</p>
+  </footer>
+</body>
+</html>

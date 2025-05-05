@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adopt - Kind Paws</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Nunito', sans-serif; background: #f0f8ff; color: #2e4057; }
+    header, footer { background: #a0c4ff; padding: 1em; text-align: center; }
+    nav a { margin: 0 10px; color: #2e4057; text-decoration: none; font-weight: 600; }
+    main { padding: 2em 1em; max-width: 900px; margin: auto; }
+    h2 { font-size: 2em; margin: 1em 0 0.5em; text-align: center; }
+    .pet-list { display: flex; flex-wrap: wrap; justify-content: space-around; }
+    .pet-card { background: #ffffff; border-radius: 10px; padding: 15px; width: 250px; margin: 10px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); text-align: center; }
+    .pet-card img { width: 100%; height: 200px; object-fit: cover; border-radius: 8px; }
+    .pet-card h3 { margin-top: 10px; font-size: 1.2em; }
+    .pet-card p { color: #666; margin: 10px 0; }
+    .adopt-btn { background: #a0c4ff; padding: 10px 20px; border-radius: 5px; color: white; text-decoration: none; font-weight: bold; display: inline-block; }
+    .adopt-btn:hover { background: #7faeff; }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      console.log("Kind Paws - Adopt Page Loaded");
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <h1>🐾 Kind Paws</h1>
+    <nav>
+        <ul>
+            <a href="kind paws.index.html">Home</a>
+            <a href="kindpaws.about.html">About</a>
+            <a href="kindpaws.adopt.html">Adopt</a>
+            <a href="kindpaws.donate.html">Donate</a>
+            <a href="kindpaws.volunteer.html">Volunteer</a>
+        </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Meet Our Adoptable Pets</h2>
+    <div class="pet-list">
+      <div class="pet-card">
+        <img src="https://www.boredpanda.com/blog/wp-content/org_uploads/2014/06/none1686__700.jpg" alt="Dog 1">
+        <h3>Buddy</h3>
+        <p>Age: 3 years</p>
+        <p>Breed: Pomeranian</p>
+        <a href="#" class="adopt-btn">Adopt Buddy</a>
+      </div>
+      <div class="pet-card">
+        <img src="https://cdn-prd.content.metamorphosis.com/wp-content/uploads/sites/6/2022/05/shutterstock_529323184.jpg" alt="Dog 2">
+        <h3>Charlie</h3>
+        <p>Age: 2 years</p>
+        <p>Breed: Beagle</p>
+        <a href="#" class="adopt-btn">Adopt Luna</a>
+      </div>
+      <div class="pet-card">
+        <img src="https://i.pinimg.com/736x/86/b8/f2/86b8f217408a40ad10783bf0fb00f272.jpg" alt="Dog 3">
+        <h3>Luna</h3>
+        <p>Age: 4 years</p>
+        <p>Breed: Golden Retriever</p>
+        <a href="#" class="adopt-btn">Adopt Charlie</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Kind Paws</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volunteer - Kind Paws</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Nunito', sans-serif; background: #f8f9fa; color: #333; line-height: 1.6; }
+    header, footer { background: #a0c4ff; padding: 1.5em 0; text-align: center; color: #fff; }
+    h1 { font-size: 2.5em; font-weight: 700; margin-bottom: 0.5em; }
+    nav a { margin: 0 20px; color: #fff; text-decoration: none; font-weight: 600; }
+    main { padding: 3em 1em; max-width: 1100px; margin: auto; }
+    h2 { font-size: 2.5em; color: #0056b3; text-align: center; margin-bottom: 30px; }
+    p { font-size: 1.1em; color: #555; text-align: center; margin-bottom: 30px; }
+
+    .volunteer-section { display: flex; justify-content: space-evenly; flex-wrap: wrap; gap: 30px; margin-bottom: 40px; }
+    .volunteer-card { background: #ffffff; border-radius: 10px; padding: 25px; width: 300px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); text-align: center; transition: transform 0.3s ease; }
+    .volunteer-card:hover { transform: scale(1.05); }
+    .volunteer-card h3 { margin-bottom: 15px; font-size: 1.7em; color: #007bff; font-weight: 600; }
+    .volunteer-card p { margin-bottom: 20px; color: #666; font-size: 1.1em; line-height: 1.5; }
+
+    .form-section { max-width: 600px; margin: 0 auto; background: #ffffff; padding: 40px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); }
+    .form-section h3 { font-size: 2em; color: #0056b3; text-align: center; margin-bottom: 30px; }
+    label { display: block; font-size: 1.1em; margin-bottom: 5px; color: #333; }
+    input, select, button { width: 100%; padding: 15px; margin-top: 10px; margin-bottom: 20px; border-radius: 5px; border: 1px solid #ccc; font-size: 1.1em; }
+    button { background: #007bff; color: white; font-weight: bold; border: none; cursor: pointer; transition: background 0.3s ease; }
+    button:hover { background: #0056b3; }
+    footer p { font-size: 1.1em; color: #f1f1f1; }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      console.log("Kind Paws - Volunteer Page Loaded");
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <h1>🐾 Kind Paws</h1>
+    <nav>
+        <ul>
+            <a href="kind paws.index.html">Home</a>
+            <a href="kindpaws.about.html">About</a>
+            <a href="kindpaws.adopt.html">Adopt</a>
+            <a href="kindpaws.donate.html">Donate</a>
+            <a href="kindpaws.volunteer.html">Volunteer</a>
+        </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Become a Volunteer</h2>
+    <p>By volunteering at Kind Paws, you’re helping change the lives of many animals. We appreciate your time and commitment in helping us make a difference. Let’s work together to make a lasting impact on the lives of those who need it most.</p>
+    
+    <div class="volunteer-section">
+      <div class="volunteer-card">
+        <h3>Animal Care</h3>
+        <p>Help with feeding, grooming, and comforting the animals. You’ll have the opportunity to spend quality time with our pets and ensure they receive the love and care they deserve.</p>
+      </div>
+      
+      <div class="volunteer-card">
+        <h3>Event Assistance</h3>
+        <p>Be part of our fundraising events, adoption drives, and outreach programs. Your support will help us spread the word and create successful events that benefit our shelter.</p>
+      </div>
+
+      <div class="volunteer-card">
+        <h3>Administrative Support</h3>
+        <p>Assist with office tasks, including answering calls, managing our social media, and organizing supplies. Your contribution helps us stay efficient and organized in serving our community.</p>
+      </div>
+    </div>
+
+    <div class="form-section">
+      <h3>Sign Up to Volunteer</h3>
+      <form action="#">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        
+        <label for="availability">Availability (Days/Hours)</label>
+        <input type="text" id="availability" name="availability" placeholder="Enter your availability" required>
+        
+        <label for="role">Preferred Role</label>
+        <select id="role" name="role" required>
+          <option value="animal-care">Animal Care</option>
+          <option value="event-assistance">Event Assistance</option>
+          <option value="admin-support">Administrative Support</option>
+        </select>
+
+        <button type="submit">Join the Team</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Kind Paws. All rights reserved. Designed with care.</p>
+  </footer>
+</body>
+</html>
